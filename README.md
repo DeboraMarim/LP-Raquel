@@ -46,4 +46,4 @@ Para entrar em contato com Raquel Marim:
 
 ---
 
-Desenvolvido por [Option Tech] - 2025
+Desenvolvido por Option Tech - 2025
