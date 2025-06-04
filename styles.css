@@ -395,6 +395,7 @@ nav ul li a:hover::after {
 
 .contact-content {
     display: flex;
+    flex-direction: row;
     gap: 50px;
 }
 
