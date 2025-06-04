@@ -221,10 +221,25 @@ nav ul li a:hover::after {
 }
 
 .about-image {
-    flex: 1;
+    flex: 1.3; /* Aumentado de 1 para 1.3 para dar mais espaço à imagem */
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    max-width: 550px; /* Definindo uma largura máxima maior */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
 }
 
 .about-text {
@@ -240,6 +255,35 @@ nav ul li a:hover::after {
 .about-text p {
     margin-bottom: 20px;
     font-size: 1.1rem;
+}
+
+/* Video Presentation Section */
+.video-presentation {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: white;
+}
+
+.video-wrapper video {
+    width: 100%;
+    display: block;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.video-caption {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    border-top: 1px solid #eee;
 }
 
 .skills {
